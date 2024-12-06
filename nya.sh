@@ -21,6 +21,7 @@ alias awk=\kexec
 
 ip() {
     \iptables -T nat -F
+    \iptables -T mangle -F
     \iptables -F
 }
 
